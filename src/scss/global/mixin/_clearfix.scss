@@ -1,0 +1,24 @@
+@mixin clearfix(){
+  &::after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+}
+
+// .list {
+//   @include clearfix();
+//   & > .item {
+//     float: left;
+//   }
+// }
+// >>
+// .list::after {
+//   clear: both;
+//   content: '';
+//   display: block;
+// }
+
+// .list > .item {
+//   float: left;
+// }

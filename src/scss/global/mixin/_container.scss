@@ -1,0 +1,34 @@
+$content_width: 960px;
+
+@mixin container($type: "default") {
+  @if $type == "default" {
+      position: relative;
+      max-width: $content_width;
+      margin: 0 auto;
+      padding: 0 15px;
+      @include mq("sm"){
+        padding: 0 60px;
+      }
+  } @else if $type == "mainvisual" {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: $content_width;
+      height: 75vh;
+      @include mq("sm"){
+          height: 100vh;
+      }
+      padding-top:6rem;
+      margin: 0 auto;
+      text-align: center;
+  } @else if $type == "breadcrumbs" {
+      position: relative;
+      max-width: $content_width;
+      margin: 0 auto;
+      padding: .8rem 15px;
+  } @else if $type == "footer" {
+      max-width: $content_width;
+      margin: 0 auto;
+  }
+}
