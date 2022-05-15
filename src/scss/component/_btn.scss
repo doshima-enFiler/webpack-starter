@@ -1,0 +1,11 @@
+@use '../global' as g;
+
+.c-btn{
+  display: block;
+  width: 200px;
+  padding: 15px 0;
+  margin: 30px auto 0;
+  border: 1px solid g.$color_black;
+  background-color: g.$color_black;
+  color: g.$color_white;
+}

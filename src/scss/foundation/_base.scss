@@ -1,24 +1,48 @@
+@use '../global' as g;
+
+html {
+  height: 100%;
+  min-height: 100%;
+  line-height: 1.6;
+}
+
 body {
   color: #000;
   font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
     'Hiragino Sans', Meiryo, sans-serif;
-}
-//SP
-@media screen and (max-width: 600px) {
-  body {
-    min-width: 320px;
-  }
-  html,
-  body {
-    height: 100%;
-    min-height: 100%;
-  }
-}
-//PC
-@media print, screen and (min-width: 1024px) {
-  body {
+  width: 100%;
+  min-width: 320px;
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  @include g.mq(lg) {
     width: 100%;
   }
+}
+
+p{
+  font-size: g.rem(14px);
+}
+
+img,
+video,
+object{
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: block;
+}
+
+a {
+  color: g.$color_link;
+  text-decoration: none;
+  transition: 0.3s;
+  @include g.hover(){
+    opacity: .75;
+  }
+}
+small {
+  font-size: g.rem(10px);
 }
 
 //SP

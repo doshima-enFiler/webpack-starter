@@ -9,15 +9,138 @@
   </head>
   <body>
     <header class="l-header">
-      <div class="l-header__container"></div>
+      <div class="l-container">
+        <div class="l-header__content">
+          <div class="l-header__logo">
+            <a href="/"><img src="./img/logo.svg" alt="" /></a>
+          </div>
+          <nav class="l-header__nav">
+            <ul class="l-header__main">
+              <li class="l-header__item">
+                <a href="#">About</a>
+              </li>
+              <li class="l-header__item">
+                <a href="#">Works</a>
+              </li>
+              <li class="l-header__item">
+                <a href="#">News</a>
+              </li>
+              <li class="l-header__item">
+                <a href="#">Contact</a>
+              </li>
+              <li class="l-header__item _sns">
+                <a href="#"><img src="./img/icon-instagram.png" alt="" /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
-    <div class="mv"><img src="" alt="" /></div>
+    <div class="p-mv">
+      <picture>
+        <source media="(min-width: 600px)" srcset="./img/mainvisual-pc.jpg" />
+        <img src="./img/mainvisual-sp.jpg" alt="" />
+      </picture>
+    </div>
     <main class="l-main">
-      <div class="l-content__container"></div>
+      <div class="l-container">
+        <section class="c-section p-about">
+          <h2 class="c-ttl">About</h2>
+          <p class="c-txt">Xxxxx Ashley</p>
+          <p class="c-txt">
+            2th Floor xxxxx Building x-x-x Nishiazabu,<br />
+            Minato-ku, Tokyo 106-0031 Japan<br />
+            tel: 000-0000-0000<br />
+            url: www.xxxxxx.jp<br />
+            mail: xxx@xxxxxx.jp
+          </p>
+          <p class="c-txt">
+            プロフィールテキストテキストテキストテキストテキストテキストテキストテキストテキストストテキストテキストテキストテキストストテキストテキストテキストテキストストテキストテキストテキストテキストストテキストテキストテキストテキストストテキストテキストテキストテキストスト
+          </p>
+        </section>
+        <section class="c-section p-works">
+          <h2 class="c-ttl">Works</h2>
+          <div class="p-works__content">
+            <div class="p-works__item">
+              <img src="./img/works1.jpg" alt="" />
+            </div>
+            <div class="p-works__item">
+              <img src="./img/works2.jpg" alt="" />
+            </div>
+            <div class="p-works__item">
+              <img src="./img/works3.jpg" alt="" />
+            </div>
+            <div class="p-works__item">
+              <img src="./img/works4.jpg" alt="" />
+            </div>
+            <div class="p-works__item">
+              <img src="./img/works5.jpg" alt="" />
+            </div>
+            <div class="p-works__item">
+              <img src="./img/works6.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="c-sectio p-news">
+          <h2 class="c-ttl">News</h2>
+          <div class="p-news__content">
+            <div class="p-news__item">
+              <p class="p-news__data">2020.XX.XX</p>
+              <p class="p-news__txt">
+                デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。
+              </p>
+            </div>
+            <div class="p-news__item">
+              <p class="p-news__data">2019.XX.XX</p>
+              <p class="p-news__txt">
+                ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。
+              </p>
+            </div>
+            <div class="p-news__item">
+              <p class="p-news__data">2019.XX.XX</p>
+              <p class="p-news__txt">
+                【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+            <div class="p-news__item">
+              <p class="p-news__data">2019.XX.XX</p>
+              <p class="p-news__txt">
+                デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。
+              </p>
+            </div>
+            <div class="p-news__item">
+              <p class="p-news__data">2019.XX.XX</p>
+              <p class="p-news__txt">
+                【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="c-section p-contact">
+          <h2 class="c-ttl">Contact</h2>
+          <form class="c-form p-contact__form" action="" method="" name="contact-form">
+            <div class="p-contact__item">
+              <div class="p-contact__label"><label for="">NAME</label></div>
+              <div class="p-contact__text"><input type="text" id="name" name="your-name" /></div>
+            </div>
+            <div class="p-contact__item">
+              <div class="p-contact__label"><label for="">E-mail</label></div>
+              <div class="p-contact__text"><input type="email" id="email" name="your-email" /></div>
+            </div>
+            <div class="p-contact__item">
+              <div class="p-contact__label"><label for="">MESSAGE</label></div>
+              <div class="p-contact__text"><textarea id="message" name="your-message" ></textarea></div>
+            </div>
+            <input class="c-btn" type="button" value="送信">
+          </form>
+        </section>
+      </div>
     </main>
-    <footer class="footer">
-      <div class="l-footer__container">
-        <small class="l-footer__copyright">&copy;my works</small>
+    <footer class="l-footer">
+      <div class="l-container">
+        <div class="l-footer__content">
+          <small class="l-footer__copyright">&copy; 2020 My Works</small>
+        </div>
       </div>
     </footer>
     <script src="./bundle.js"></script>

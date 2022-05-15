@@ -1,0 +1,57 @@
+@use '../global' as g;
+
+.l-header {
+  background-color: g.$color_base;
+  padding-top: 20px;
+  @include g.mq(md) {
+    display: flex;
+    align-items: center;
+    height: 270px;
+    padding: 0;
+  }
+  &__content {
+    @include g.mq(md) {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__logo {
+    text-align: center;
+    a {
+      display: inline-block;
+    }
+  }
+  &__nav {
+    padding: 8px 0;
+    @include g.mq(md){
+      padding: 0;
+    }
+  }
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    list-style: none;
+  }
+  &__item {
+    padding-right: 20px;
+    font-size: g.rem(12px);
+    @include g.mq(md){
+      font-size: g.rem(14px);
+      padding-right: 0 30px;
+    }
+    &._sns {
+      padding: 0;
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+    }
+    a {
+      color: g.$color_black;
+    }
+  }
+}

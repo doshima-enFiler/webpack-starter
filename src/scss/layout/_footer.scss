@@ -1,0 +1,16 @@
+@use "../global" as g;
+
+.l-footer{
+  margin-top: 70px;
+  background-color: g.$color_black;
+  &__content{
+    text-align: center;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__copyright{
+    color: #fff;
+  }
+}
