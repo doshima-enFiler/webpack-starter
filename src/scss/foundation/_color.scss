@@ -1,0 +1,37 @@
+// サイト全体で使用する色を変数として定義
+// c-:(color)
+
+// 優先度1:接頭辞-セマンティックな命名
+$c-base: #F8F8F8;
+$c-main: #053A86;
+$c-accent: #E3C520;
+$c-primary: #145CC3;
+$c-secondary: #EF6B6B;
+
+// 優先度2:接頭辞-セマンティックな命名-明るさ
+$c-accent-lightest: #E3C520;
+$c-accent-lighter: #E3C520;
+$c-accent-light: #E3C520;
+$c-accent-dark: #E3C520;
+$c-accent-darker: #E3C520;
+$c-accent-darkest: #E3C520;
+
+// 優先度3:接頭辞-セマンティックな命名-明るさ連番（できるだけ使わない）
+$c-accent-lighter02: #E3C520;
+$c-accent-lighter03: #E3C520;
+
+// 優先度4:接頭辞-色の名前
+$c-red: #ff0000;
+$c-gray: #cccccc;
+
+// 優先度5:接頭辞-色の名前-明るさ
+$c-gray-lightest: #cccccc;
+$c-gray-lighter: #cccccc;
+$c-gray-light: #cccccc;
+$c-gray-dark: #cccccc;
+$c-gray-darker: #cccccc;
+$c-gray-darkest: #cccccc;
+
+// 優先度6:接頭辞-色の名前-明るさ連番（できるだけ使わない）
+$c-gray-lighter02: #cccccc;
+$c-gray-lighter03: #cccccc;

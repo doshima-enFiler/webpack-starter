@@ -1,2 +1,7 @@
-@use "reset";
-@use "base";
+@use "./font";
+@use "./color";
+@use "./variable";
+@use "./function";
+@use "./mixin";
+@use "./reset";
+@use "./base";
