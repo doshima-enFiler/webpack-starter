@@ -1,10 +1,22 @@
 @use '../../foundation/setting' as *;
 
-.c-button{
-  display: block;
-  width: 200px;
-  padding: 15px 0;
-  margin: 30px auto 0;
-  background-color: $c-main;
+.c-button {
+  // コンポーネント本体には共通のスタイルのみ
+  display: inline-block;
+  padding: 10px 20px;
   color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  // Modifier
+  &--primary {
+    background-color: $c-primary;
+  }
+  &--secondary {
+    background-color: $c-secondary;
+  }
+  &--full-width {
+    display: block;
+    width: 100%;
+  }
 }
