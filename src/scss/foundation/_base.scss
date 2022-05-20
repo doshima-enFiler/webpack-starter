@@ -1,5 +1,4 @@
 // ベーススタイル
-
 @use './setting' as *;
 
 *, *:before, *:after {
@@ -50,17 +49,17 @@ button{
 }
 
 small {
-  font-size: g.rem(10px);
+  font-size: rem(10px);
 }
 
 //SP
-@media screen and (max-width: 600px) {
+@include mq(md, max) {
   ._pc {
     display: none;
   }
 }
 //PC
-@media print, screen and (min-width: 1024px) {
+@include mq(lg, max) {
   ._sp {
     display: none;
   }

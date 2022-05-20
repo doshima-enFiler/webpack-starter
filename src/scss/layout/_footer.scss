@@ -1,8 +1,8 @@
-@use "../global" as g;
+@use '../foundation/setting' as *;
 
 .l-footer{
   margin-top: 70px;
-  background-color: g.$color_black;
+  background-color: $c-main;
   &__content{
     text-align: center;
     height: 32px;
