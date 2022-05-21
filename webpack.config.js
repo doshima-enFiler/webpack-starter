@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const RemoveEmptyScriptsPlugin = require("webpack-remove-empty-scripts");
 
 const mode = 'production';
 const enabledSourceMap = mode === 'development';
@@ -8,16 +9,18 @@ module.exports = {
   mode: mode,
   entry: {
     "bundle": "./src/js/index.js",
-    "bundle": "./src/scss/style.scss",
+    "style": "./src/scss/style.scss",
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: "bundle.js",
+    filename: "[name].js",
   },
 
   module: {
     rules: [
       {
+        test: /\.js$/,
+        use: "babel-loader",
         test: /\.(sa|sc|c)ss$/,
         use: [
           {
@@ -47,7 +50,8 @@ module.exports = {
 
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: '[name].css',
     }),
+    new RemoveEmptyScriptsPlugin(),
   ],
 };
