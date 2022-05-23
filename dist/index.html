@@ -12,7 +12,7 @@
       <header class="l-header">
         <div class="l-header__inner">
           <div class="l-header__logo">
-            <a href="/"><img src="./img/logo.svg" alt="" /></a>
+            <a href="/"><img src="./images/sample.jpg" alt="" /></a>
           </div>
           <nav class="l-header__nav">
             <ul class="l-header__list">
@@ -47,40 +47,50 @@
           <section class="p-top-about">
             <div class="p-top-about__inner">
               <h2 class="p-top-about__heading">about</h2>
-            </div>
-            <div class="p-top-about__button">
-              <a href="#!" class="c-button c-button--primary">primary</a>
-            </div>
-            <div class="p-top-about__button">
-              <a href="#!" class="c-button c-button--primary c-button--full-width">primary full-width</a>
-            </div>
-            <div class="p-top-about__button">
-              <a href="#!" class="c-button c-button--secondary">secondary</a>
-            </div>
-            <div class="p-top-about__button">
-              <a href="#!" class="c-button c-button--secondary c-button--full-width">secondary full-width</a>
+              <div class="p-top-about__button">
+                <a href="#!" class="c-button c-button--primary">primary</a>
+              </div>
+              <div class="p-top-about__button">
+                <a
+                  href="#!"
+                  class="c-button c-button--primary c-button--full-width"
+                  >primary full-width</a
+                >
+              </div>
+              <div class="p-top-about__button">
+                <a href="#!" class="c-button c-button--secondary">secondary</a>
+              </div>
+              <div class="p-top-about__button">
+                <a
+                  href="#!"
+                  class="c-button c-button--secondary c-button--full-width"
+                  >secondary full-width</a
+                >
+              </div>
             </div>
           </section>
-          <section class="p-works">
-            <h2 class="c-heading">Works</h2>
-            <div class="p-works__content">
-              <div class="p-works__item">
-                <img src="./img/works1.jpg" alt="" />
-              </div>
-              <div class="p-works__item">
-                <img src="./img/works2.jpg" alt="" />
-              </div>
-              <div class="p-works__item">
-                <img src="./img/works3.jpg" alt="" />
-              </div>
-              <div class="p-works__item">
-                <img src="./img/works4.jpg" alt="" />
-              </div>
-              <div class="p-works__item">
-                <img src="./img/works5.jpg" alt="" />
-              </div>
-              <div class="p-works__item">
-                <img src="./img/works6.jpg" alt="" />
+          <!-- topページのworksセクション -->
+          <section class="p-top-works">
+            <div class="p-top-works__inner">
+              <h2 class="p-top-works__heading">Works</h2>
+              <ul class="p-top-works__tabs">
+                <li class="p-top-works__tab js-tab is-active">Work1</li>
+                <li class="p-top-works__tab js-tab">Work2</li>
+                <li class="p-top-works__tab js-tab">Work3</li>
+              </ul>
+              <div class="p-top-works__panels">
+                <div class="p-top-works__panel is-active">
+                  <h3 class="p-top-works__work-heading">Work1</h3>
+                  <img src="./images/sample.jpg" alt="Works1" />
+                </div>
+                <div class="p-top-works__panel">
+                  <h3 class="p-top-works__work-heading">Work2</h3>
+                  <img src="./images/sample.jpg" alt="Works2" />
+                </div>
+                <div class="p-top-works__panel">
+                  <h3 class="p-top-works__work-heading">Work3</h3>
+                  <img src="./images/sample.jpg" alt="Works3" />
+                </div>
               </div>
             </div>
           </section>
@@ -125,6 +135,7 @@
         </div>
       </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./bundle.js"></script>
   </body>
 </html>
