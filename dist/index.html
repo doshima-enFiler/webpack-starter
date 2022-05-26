@@ -4,29 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Works</title>
+    <title>START</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet">
   </head>
   <body>
     <div class="l-wrapper">
       <header class="l-header">
         <div class="l-header__inner">
           <div class="l-header__logo">
-            <a href="/"><img src="./images/sample.jpg" alt="" /></a>
+            <a class="l-header__logo-link" href="/"><img class="l-header__logo-img" src="./images/logo.svg" alt="START" /></a>
+          </div>
+          <div class="l-header__hamburger js-hamburger">
+            <span class="l-header__hamburger-line"></span>
+            <span class="l-header__hamburger-line"></span>
+            <span class="l-header__hamburger-line"></span>
           </div>
           <nav class="l-header__nav">
             <ul class="l-header__list">
               <li class="l-header__item">
-                <a class="l-header__link" href="#">About</a>
+                <a class="l-header__link is-now" href="./index.html">ホーム</a>
               </li>
               <li class="l-header__item">
-                <a class="l-header__link" href="#">Works</a>
+                <a class="l-header__link" href="./message.html">メッセージ</a>
               </li>
               <li class="l-header__item">
-                <a class="l-header__link" href="#">News</a>
-              </li>
-              <li class="l-header__item">
-                <a class="l-header__link" href="#">Contact</a>
+                <a class="l-header__link" href="./company.html">会社概要</a>
               </li>
             </ul>
           </nav>
@@ -37,105 +42,106 @@
           <!-- topページのmvセクション -->
           <section class="p-top-mv">
             <div class="p-top-mv__inner">
-              <h1 class="p-top-mv-heading"></h1>
+              <h1 class="p-top-mv__heading">START</h1>
+              <p class="p-top-mv__catch">仕事に最高のスタートを。</p>
               <div class="p-top-mv__mv">
-                <img src="" alt="" />
+                <picture class="p-top-mv__images">
+                  <source
+                    srcset="./images/pc_bg_mv.jpg"
+                    media="(min-width: 600px)"
+                  />
+                  <img src="./images/sp_mv.jpg" alt="START 仕事に最高のスタートを。" />
+                </picture>
               </div>
             </div>
           </section>
-          <!-- topページのaboutセクション -->
-          <section class="p-top-about">
-            <div class="p-top-about__inner">
-              <h2 class="p-top-about__heading">about</h2>
-              <div class="p-top-about__button">
-                <a href="#!" class="c-button c-button--primary">primary</a>
-              </div>
-              <div class="p-top-about__button">
-                <a
-                  href="#!"
-                  class="c-button c-button--primary c-button--full-width"
-                  >primary full-width</a
-                >
-              </div>
-              <div class="p-top-about__button">
-                <a href="#!" class="c-button c-button--secondary">secondary</a>
-              </div>
-              <div class="p-top-about__button">
-                <a
-                  href="#!"
-                  class="c-button c-button--secondary c-button--full-width"
-                  >secondary full-width</a
-                >
-              </div>
-            </div>
-          </section>
-          <!-- topページのworksセクション -->
-          <section class="p-top-works">
-            <div class="p-top-works__inner">
-              <h2 class="p-top-works__heading">Works</h2>
-              <ul class="p-top-works__tabs">
-                <li class="p-top-works__tab js-tab is-active">Work1</li>
-                <li class="p-top-works__tab js-tab">Work2</li>
-                <li class="p-top-works__tab js-tab">Work3</li>
-              </ul>
-              <div class="p-top-works__panels">
-                <div class="p-top-works__panel is-active">
-                  <h3 class="p-top-works__work-heading">Work1</h3>
-                  <img src="./images/sample.jpg" alt="Works1" />
-                </div>
-                <div class="p-top-works__panel">
-                  <h3 class="p-top-works__work-heading">Work2</h3>
-                  <img src="./images/sample.jpg" alt="Works2" />
-                </div>
-                <div class="p-top-works__panel">
-                  <h3 class="p-top-works__work-heading">Work3</h3>
-                  <img src="./images/sample.jpg" alt="Works3" />
-                </div>
+          <!-- topページのnewsセクション -->
+          <section class="p-top-news">
+            <div class="p-top-news__inner">
+              <h2 class="p-top-news__heading">ニュース</h2>
+              <div class="p-top-news__list">
+                <a href="" class="p-top-news__link">
+                  <time class="p-top-news__date">2023.02.10</time>
+                  <p class="p-top-news__text">
+                    コーポレートサイトをリニューアルしました。
+                  </p>
+                </a>
+                <a href="" class="p-top-news__link">
+                  <time class="p-top-news__date">2023.02.08</time>
+                  <p class="p-top-news__text">
+                    採用を強化中です！一緒に働きませんか？
+                  </p>
+                </a>
+                <a href="" class="p-top-news__link">
+                  <time class="p-top-news__date">2022.02.02</time>
+                  <p class="p-top-news__text">
+                    人材紹介SNS『スタート』をリリースしました。3/31まで新規登録キャンペーンを開催中です！サービス内で使える500ポイントをプレゼント！
+                  </p>
+                </a>
               </div>
             </div>
           </section>
-          <section class="p-contact">
-            <h2 class="c-heading">Contact</h2>
-            <form
-              class="c-form p-contact__form"
-              action=""
-              method=""
-              name="contact-form"
-            >
-              <div class="p-contact__item">
-                <div class="p-contact__label"><label for="">NAME</label></div>
-                <div class="p-contact__text">
-                  <input type="text" id="name" name="your-name" />
+          <!-- topページのserviceセクション -->
+          <section class="p-top-service">
+            <div class="p-top-service__inner">
+              <h2 class="p-top-service__heading">サービス</h2>
+              <p class="p-top-service__heading-sub">SERVICE</p>
+              <div class="p-top-service__content">
+                <div class="p-top-servive__item">
+                  <div class="p-top-service__item-icon">
+                    <span class="material-icons"> work </span>
+                  </div>
+                  <h3 class="p-top-service__item-heading">人材紹介業</h3>
+                  <p class="p-top-service__item-text">
+                    新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。
+                  </p>
+                </div>
+                <div class="p-top-servive__item">
+                  <div class="p-top-service__item-icon">
+                    <span class="material-icons">
+                      location_city
+                    </span>
+                  </div>
+                  <h3 class="p-top-service__item-heading">スクール事業</h3>
+                  <p class="p-top-service__item-text">
+                    オンラインでWeb制作を学べるスクールを運営しています。
+                  </p>
+                </div>
+                <div class="p-top-servive__item">
+                  <div class="p-top-service__item-icon">
+                    <span class="material-icons material-icons-outlined"> tv </span>
+                  </div>
+                  <h3 class="p-top-service__item-heading">Webメディア運営</h3>
+                  <p class="p-top-service__item-text">
+                    人事系メディアやWebデザイン関連のメディアなどを複数運営しています。
+                  </p>
                 </div>
               </div>
-              <div class="p-contact__item">
-                <div class="p-contact__label"><label for="">E-mail</label></div>
-                <div class="p-contact__text">
-                  <input type="email" id="email" name="your-email" />
-                </div>
-              </div>
-              <div class="p-contact__item">
-                <div class="p-contact__label">
-                  <label for="">MESSAGE</label>
-                </div>
-                <div class="p-contact__text">
-                  <textarea id="message" name="your-message"></textarea>
-                </div>
-              </div>
-              <input class="c-btn" type="button" value="送信" />
-            </form>
+            </div>
           </section>
         </div>
       </main>
       <footer class="l-footer">
-        <div class="l-container">
-          <div class="l-footer__content">
-            <small class="l-footer__copyright">&copy; 2020 My Works</small>
+        <div class="l-footer__inner">
+          <nav class="l-footer__nav">
+            <ul class="l-footer__list">
+              <li class="l-footer__item">
+                <a href="./index.html" class="l-footer__link">ホーム</a>
+              </li>
+              <li class="l-footer__item">
+                <a href="./message.html" class="l-footer__link">メッセージ</a></li>
+              <li class="l-footer__item">
+                <a href="./company.html" class="l-footer__link">会社概要</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="l-footer__copyright">
+            <small class="l-footer__copyright-text">&copy;START</small>
           </div>
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
     <script src="./bundle.js"></script>
   </body>
 </html>

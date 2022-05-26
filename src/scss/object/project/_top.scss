@@ -22,16 +22,20 @@
   margin-bottom: 80px;
   &__inner {
     width: 100vw;
+    height: 460px;
+    @include mq{
+      height: 600px;
+    }
   }
   &__heading {
     font-size: rem(32px);
   }
   &__mv {
-    width: 100vw;
+    width: 100%;
   }
 }
 
-.p-top-about {
+.p-top-news {
   margin-bottom: 80px;
   &__inner {
     @extend %p-top-inner;
