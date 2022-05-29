@@ -1,6 +1,6 @@
 # webpack-starter
 
-Webpackとnpm scriptsを使用した、Flocss × Dart Sassのコーディング環境。
+Webpackとnpm scriptsを使用した、Flocss と Dart Sassのコーディング環境です。
 
 ## How to use
 
