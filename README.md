@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # webpack-starter
 
 Webpackとnpm scriptsを使用した、Flocss × Dart Sassのコーディング環境。
@@ -16,4 +14,5 @@ Webpackとnpm scriptsを使用した、Flocss × Dart Sassのコーディング�
 `npm run w`
 
 コンパイルだけなら`npm run build`で可能。
->>>>>>> b4b8cade4d0d2120545d30d8eee68c9eff8d4ce6
+
+GitHub Pagesで確認しやすいよう、出力先をdocsへ設定しています。
